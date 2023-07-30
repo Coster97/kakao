@@ -47,8 +47,7 @@ class emoticon {
                     }else{
                         continue;
                     }
-                    
-                    
+                         
                 }
                 if(AllAmount >= userAmount){
                     plusMem ++;
