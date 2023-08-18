@@ -62,3 +62,47 @@ public class dartGame {
     }
     
 }
+
+// import java.util.*;
+// class Solution {
+//     public int solution(String dartResult) {
+//         int sum = 0;
+//         int num = 0;
+//         int[] arr = new int[3];
+//         int i = 0;
+//         for (char c : dartResult.toCharArray()) {
+//             if (Character.isDigit(c)) {
+//                 num = num * 10 + (c - '0'); 
+//             } else {
+//                 if (c == 'S') {
+//                     sum += num;
+//                     arr[i] = num;
+//                     i ++;
+//                 } else if (c == 'D') {
+//                     sum += (int) Math.pow(num, 2);
+//                     arr[i] = (int) Math.pow(num, 2);
+//                     i ++;
+//                 } else if (c == 'T') {
+//                     sum += (int) Math.pow(num, 3);
+//                     arr[i] = (int) Math.pow(num, 3);
+//                     i ++;
+//                 } else if (c == '*') {
+//                     sum -= arr[i-1];
+//                     if(i-2 >= 0){
+//                         sum -= arr[i-2];
+//                         arr[i-2] = arr[i-2]*2;
+//                         sum += arr[i-2];
+//                     }                    
+//                     arr[i-1] = arr[i-1]*2;
+//                     sum += arr[i-1];
+//                 } else if (c == '#') {
+//                     sum -= arr[i-1];
+//                     arr[i-1] = arr[i-1]*(-1);
+//                     sum += arr[i-1];
+//                 }
+//                 num = 0; 
+//             }
+//         }
+//         return sum;
+//     }
+// }
